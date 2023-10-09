@@ -82,6 +82,6 @@ jobs:
     - name: Install C1 License Manager
       run: |
         md C:\ProgramData\GrapeCity\gclm\
-        ./gclm_deploye.exe
+        echo ${{ github.workspace }}
    
   

@@ -86,20 +86,9 @@ jobs:
         C:\ProgramData\GrapeCity\gclm\gclm.exe "331cf6cd-b73c-429f-ba79-fa2f85eebd68" >status.txt
         cat ${{ github.workspace }}\status.txt
         echo "${{ github.workspace }}\status.txt"
-
-        steps:
-        - uses: actions/checkout@v4
-        - name: Setup dotnet
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '4.8.x'
-    
-    - name: Install dependencies
-      run: dotnet restore
-            dotnet build
-      
-    - name: Test with the dotnet CLI
-      run: dotnet test
-       
-   
+        file_path="${{ github.workspace }}\status.txt"
+        file_contents=$(cat $file_path)
+          echo "File Contents:"
+          echo "$file_contents"
+        
   

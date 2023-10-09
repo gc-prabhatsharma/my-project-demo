@@ -81,5 +81,10 @@ jobs:
     - name: Execute unit tests
       run: dotnet test
 
+    #Install C1 License
+    - name: Install C1 License Manager
+      run: |
+        md C:\ProgramData\GrapeCity\gclm\
+
    
   

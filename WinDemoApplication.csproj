@@ -57,11 +57,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\WinDemoApplication.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\WinDemoApplication.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -71,7 +74,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\WinDemoApplication.exe.config" />
     <None Include="gclm.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\WinDemoApplication.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\WinDemoApplication.csproj.CopyComplete" />
+    <None Include="obj\Debug\WinDemoApplication.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\WinDemoApplication.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\WinDemoApplication.csproj.SuggestedBindingRedirects.cache" />
     <None Include="Package_331cf6cd.data" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,8 +98,23 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\C1.Win.4.8.dll" />
+    <Content Include="bin\Debug\C1.Win.4.8.xml" />
+    <Content Include="bin\Debug\C1.Win.C1Command.4.8.dll" />
+    <Content Include="bin\Debug\C1.Win.C1Command.4.8.xml" />
+    <Content Include="bin\Debug\C1.Win.C1Input.4.8.dll" />
+    <Content Include="bin\Debug\C1.Win.C1Input.4.8.xml" />
+    <Content Include="bin\Debug\WinDemoApplication.exe" />
+    <Content Include="bin\Debug\WinDemoApplication.pdb" />
     <Content Include="gclm.exe" />
     <Content Include="gclm_deploy.exe" />
+    <Content Include="obj\Debug\WinDemoApplication.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\WinDemoApplication.exe" />
+    <Content Include="obj\Debug\WinDemoApplication.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

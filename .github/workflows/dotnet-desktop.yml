@@ -93,6 +93,7 @@ jobs:
         dotnet-version: '6.0.x'
     - name: Install dependencies
       run: dotnet restore
+        Update-Package -reinstall 
     - name: Build
       run: dotnet build
     - name: Test with the dotnet CLI

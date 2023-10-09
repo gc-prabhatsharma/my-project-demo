@@ -82,7 +82,7 @@ jobs:
         Copy ${{ github.workspace }}/gclm.exe C:\ProgramData\GrapeCity\gclm\
         Copy ${{ github.workspace }}/gclm.exe.config C:\ProgramData\GrapeCity\gclm\
         Copy ${{ github.workspace }}/Package_331cf6cd.data C:\ProgramData\GrapeCity\gclm\
-        C:\ProgramData\GrapeCity\gclm\gclm.exe "331cf6cd-b73c-429f-ba79-fa2f85eebd68" -a "42543724390962231" “bunge-MERF-JP00-8KM6-XZSJ”
+        C:\ProgramData\GrapeCity\gclm\gclm.exe "331cf6cd-b73c-429f-ba79-fa2f85eebd68" -a "2242543724390962231" “bunge-MERF-JP00-8KM6-XZSJ”
         C:\ProgramData\GrapeCity\gclm\gclm.exe "331cf6cd-b73c-429f-ba79-fa2f85eebd68" cat >status.txt
         cat ${{ github.workspace }}\status.txt
         echo (cat ${{ github.workspace }}\status.txt) 
@@ -93,7 +93,6 @@ jobs:
         dotnet-version: '6.0.x'
     - name: Install dependencies
       run: dotnet restore
-        Update-Package -reinstall 
     - name: Build
       run: dotnet build
     - name: Test with the dotnet CLI

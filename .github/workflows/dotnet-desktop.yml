@@ -74,7 +74,15 @@ jobs:
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
 
- 
+
+
+    # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: MSIX Package
+        path: ${{ env.Wap_Project_Directory }}\AppPackages
+        
     #Install C1 License
     - name: Install C1 License Manager
       run: |
@@ -82,12 +90,17 @@ jobs:
         Copy ${{ github.workspace }}/gclm.exe C:\ProgramData\GrapeCity\gclm\
         Copy ${{ github.workspace }}/gclm.exe.config C:\ProgramData\GrapeCity\gclm\
         Copy ${{ github.workspace }}/Package_331cf6cd.data C:\ProgramData\GrapeCity\gclm\
-        C:\ProgramData\GrapeCity\gclm\gclm.exe "331cf6cd-b73c-429f-ba79-fa2f85eebd68" -a "42543724390962231" “bunge-MERF-JP00-8KM6-XZSJ”
+        C:\ProgramData\GrapeCity\gclm\gclm.exe "331cf6cd-b73c-429f-ba79-fa2f85eebd68" -a "2242543724390962231" “bunge-MERF-JP00-8KM6-XZSJ”
         C:\ProgramData\GrapeCity\gclm\gclm.exe "331cf6cd-b73c-429f-ba79-fa2f85eebd68" cat >status.txt
         cat ${{ github.workspace }}\status.txt
         echo (cat ${{ github.workspace }}\status.txt) 
-        
 
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '6.0.x'
+    - name: Install dependencies
+      run: dotnet restore
     - name: Build
       run: dotnet build
     - name: Test with the dotnet CLI

@@ -33,9 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.8, Version=4.8.20232.611, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
-    <Reference Include="C1.Win.C1Command.4.8, Version=4.8.20232.611, Culture=neutral, PublicKeyToken=e808566f358766d8" />
-    <Reference Include="C1.Win.C1Input.4.8, Version=4.8.20232.611, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.4.8, Version=4.8.20232.620, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <HintPath>packages\C1.Win.4.8.20232.620\lib\net48\C1.Win.4.8.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4.8, Version=4.8.20232.620, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
+      <HintPath>packages\C1.Win.C1Command.4.8.20232.620\lib\net48\C1.Win.C1Command.4.8.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4.8, Version=4.8.20232.620, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <HintPath>packages\C1.Win.C1Input.4.8.20232.620\lib\net48\C1.Win.C1Input.4.8.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -83,6 +89,7 @@
     <None Include="obj\Debug\WinDemoApplication.csproj.CoreCompileInputs.cache" />
     <None Include="obj\Debug\WinDemoApplication.csproj.GenerateResource.cache" />
     <None Include="obj\Debug\WinDemoApplication.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="packages.config" />
     <None Include="Package_331cf6cd.data" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

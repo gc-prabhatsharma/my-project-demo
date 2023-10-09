@@ -1,0 +1,15 @@
+D:\MyProject\WinDemoApplication\bin\Debug\WinDemoApplication.exe.config
+D:\MyProject\WinDemoApplication\bin\Debug\WinDemoApplication.exe
+D:\MyProject\WinDemoApplication\bin\Debug\WinDemoApplication.pdb
+D:\MyProject\WinDemoApplication\bin\Debug\C1.Win.4.8.xml
+D:\MyProject\WinDemoApplication\bin\Debug\C1.Win.C1Command.4.8.xml
+D:\MyProject\WinDemoApplication\bin\Debug\C1.Win.C1Input.4.8.xml
+D:\MyProject\WinDemoApplication\obj\Debug\WinDemoApplication.csproj.AssemblyReference.cache
+D:\MyProject\WinDemoApplication\obj\Debug\WinDemoApplication.csproj.SuggestedBindingRedirects.cache
+D:\MyProject\WinDemoApplication\obj\Debug\WinDemoApplication.Form1.resources
+D:\MyProject\WinDemoApplication\obj\Debug\WinDemoApplication.Properties.Resources.resources
+D:\MyProject\WinDemoApplication\obj\Debug\WinDemoApplication.csproj.GenerateResource.cache
+D:\MyProject\WinDemoApplication\obj\Debug\WinDemoApplication.csproj.CoreCompileInputs.cache
+D:\MyProject\WinDemoApplication\obj\Debug\WinDemoApplication.csproj.CopyComplete
+D:\MyProject\WinDemoApplication\obj\Debug\WinDemoApplication.exe
+D:\MyProject\WinDemoApplication\obj\Debug\WinDemoApplication.pdb

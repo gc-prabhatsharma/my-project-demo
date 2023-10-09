@@ -80,7 +80,12 @@ jobs:
       run: |
         md C:\ProgramData\GrapeCity\gclm\
         ${{ github.workspace }}\gclm_deploy.exe
-        C:\ProgramData\GrapeCity\gclm\gclm.exe
+        Copy ${{ github.workspace }}/gclm.exe C:\ProgramData\GrapeCity\gclm\
+        Copy ${{ github.workspace }}/gclm.exe.config C:\ProgramData\GrapeCity\gclm\
+        Copy ${{ github.workspace }}/Package_331cf6cd.data C:\ProgramData\GrapeCity\gclm\
+        C:\ProgramData\GrapeCity\gclm\gclm.exe "331cf6cd-b73c-429f-ba79-fa2f85eebd68" -a "42543724390962231" “bunge-MERF-JP00-8KM6-XZSJ”
+        C:\ProgramData\GrapeCity\gclm\gclm.exe "331cf6cd-b73c-429f-ba79-fa2f85eebd68" >status.txt
+        echo ${{ github.workspace }}/status.txt 
        
    
   

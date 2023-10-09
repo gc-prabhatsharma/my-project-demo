@@ -82,7 +82,7 @@ jobs:
         ${{ github.workspace }}/gclm_deploy.exe
         Copy ${{ github.workspace }}/gclm.exe C:\ProgramData\GrapeCity\gclm\
         Copy ${{ github.workspace }}/gclm.exe.config C:\ProgramData\GrapeCity\gclm\
-        Copy ${{ github.workspace }}/Package_331cf6cd 1.data C:\ProgramData\GrapeCity\gclm\
+        Copy ${{ github.workspace }}/Package_331cf6cd1.data C:\ProgramData\GrapeCity\gclm\
         C:\ProgramData\GrapeCity\gclm\gclm.exe
    
   

@@ -72,7 +72,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="gclm.exe.config" />
-    <None Include="Package_331cf6cd1.data" />
+    <None Include="Package_331cf6cd.data" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -80,6 +80,7 @@ jobs:
       run: |
         md C:\ProgramData\GrapeCity\gclm\
         ${{ github.workspace }}/gclm_deploy.exe
+        Copy ${{ github.workspace }}/gclm.exe C:\ProgramData\GrapeCity\gclm\
         C:\ProgramData\GrapeCity\gclm\gclm.exe
    
   

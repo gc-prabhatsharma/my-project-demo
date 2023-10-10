@@ -92,7 +92,7 @@ jobs:
         Copy ${{ github.workspace }}/Package_331cf6cd.data C:\ProgramData\GrapeCity\gclm\
         C:\ProgramData\GrapeCity\gclm\gclm.exe "331cf6cd-b73c-429f-ba79-fa2f85eebd68" -a "2242543724390962231" “bunge-MERF-JP00-8KM6-XZSJ”
         C:\ProgramData\GrapeCity\gclm\gclm.exe "331cf6cd-b73c-429f-ba79-fa2f85eebd68"
-
+        echo "::${{ github.workspace }}\status.txt"
     - name: Setup dotnet
       uses: actions/setup-dotnet@v3
       with:
